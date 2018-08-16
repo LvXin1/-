@@ -1,0 +1,29 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import 'style/font.wxss';
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-iconfontpaihangbang:before { content: "\e61c"; }
+
+.icon-shaidan:before { content: "\e65f"; }
+
+.icon-community:before { content: "\e686"; }
+
+.icon-navicon-ctcp:before { content: "\e649"; }
+view{
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

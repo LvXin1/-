@@ -1,0 +1,11 @@
+<view class="content">
+  <view class="content-left">
+    <text bindtap='bindTap' wx:for="{{menuClassLists}}" wx:key="{{index}}" class="{{isChecked[index]?'active':''}}" data-index="{{index}}">{{item.name}}</text>
+  </view>
+  <view class="content-right">
+    <view class="content-right_title">{{selectMenuName}} </view>
+    <view class="content-right_list">
+      <text wx:for="{{subMenu}}" wx:key="{{index}}" bindtap='findMenu'data-id="{{item.id}}">{{item.name}}</text>
+    </view>
+  </view>
+</view>

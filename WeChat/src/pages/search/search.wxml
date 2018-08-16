@@ -1,0 +1,33 @@
+<!--src/pages/search/search.wxml-->
+<view class="header">
+  <input placeholder="搜菜谱、食材" auto-focus bindconfirm="inputMenu" confirm-type="search" />
+  <text>取消</text>
+</view>
+
+<!-- <view class="weui-cells searchbar-result marginTp-no paddingTp-no" wx:if="{{menuNameLists.length > 0 && searchShow}}">
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{menuNameLists}}" wx:key="{{index}}" bindtap="skip(item)">
+    <view class="weui-cell__bd">
+      <view>{{item}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+</view> -->
+<view class="weui-cells searchbar-result marginTp-no paddingTp-no" wx:if="{{menuNameLists.length > 0 && searchShow}}">
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" data-name="{{item}}" wx:for="{{menuNameLists}}" wx:key="{{index}}" bindtap="skip">
+    <view class="weui-cell__bd">
+      <view>{{item}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+</view>
+
+<view class="" hidden="{{searchShow}}">
+  <view  class="menu-list" wx:for="{{menuLists}}" wx:key="{{index}}" bindtap="findDetail" data-id="{{item.id}}">
+    <image src="{{item.albums[0]}}"></image>
+    <view class="menu-list-memo">
+      <text class="menu-Name">{{item.title}}</text>
+      <text class="menu-ingredients">{{item.ingredients}}</text>
+      <text class="menu-tag">{{item.tags}}</text>
+    </view>
+  </view>
+</view>

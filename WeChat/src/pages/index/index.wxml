@@ -1,0 +1,97 @@
+<view class="header">
+  <input placeholder="输入您要找的菜品" bindtap='searchMenu'/>
+</view>
+<view class="banner">
+  <swiper indicator-dots="true"
+    autoplay="ture" interval="3000" duration="1000" circular="true">
+    <block wx:for="{{bannerUrl}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="main">
+  <view class="nav">
+    <view class="nav-list">
+      <text class="iconfont icon-iconfontpaihangbang"></text>
+      <text class="info">排行榜</text>
+    </view>
+    <view class="nav-list">
+      <text class="iconfont icon-shaidan"></text>
+      <text class="info">晒一晒</text>
+    </view>
+    <view class="nav-list">
+      <text class="iconfont icon-community"></text>
+      <text class="info">好友动态</text>
+    </view>
+    <view class="nav-list" bindtap='menuClass'>
+      <text class="iconfont icon-navicon-ctcp"></text>
+      <text class="info">菜谱分类</text>
+    </view>
+  </view>
+  <view class="dayCommend">
+    <text class="title-h1"> 流行菜谱</text>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view  class="scroll-view-item_H" bindtap='findMenu' data-name="茄汁大虾">
+          <image src="../../../images/timg 7.jpg"></image>
+          <text>茄汁大虾</text>
+        </view>
+        <view  class="scroll-view-item_H" bindtap='findMenu' data-name="水煮肉片">
+          <image src="../../../images/timg 8.jpg"></image>
+          <text>水煮肉片</text>
+        </view>
+        <view  class="scroll-view-item_H" bindtap='findMenu' data-name="木须肉">
+          <image src="../../../images/timg 9.jpg"></image>
+          <text>木须肉</text>
+        </view>
+    </scroll-view>
+  </view>
+  <view class="boutiqueMenu">
+    <text class="title-h1">精品菜单</text>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view  class="scroll-view-item_H" bindtap='findMenu' data-name="西红柿炒鸡蛋">
+          <image src="../../../images/timg 4.jpg"></image>
+          <text>西红柿炒鸡蛋</text>
+        </view>
+        <view  class="scroll-view-item_H" bindtap='findMenu' data-name="地三鲜">
+          <image src="../../../images/timg 5.jpg"></image>
+          <text>地三鲜</text>
+        </view>
+        <view  class="scroll-view-item_H" bindtap='findMenu' data-name="干煸豆角">
+          <image src="../../../images/timg 6.jpg"></image>
+          <text>干煸豆角</text>
+        </view>
+    </scroll-view>
+  </view>
+  <view class="popularCommend">
+    <text class="popularCommend-title">热门推荐</text>
+    <view class="popularCommend-list" bindtap='findMenu' data-name="红烧肉">
+      <text class="popularCommend-list_title">提起红烧肉，我就想煮碗面</text>
+      <image src="../../../images/timg 1.jpg"></image>
+      <view class="popularCommend-list_memo">
+        <text>我爱厨房</text>
+        <text>1.5万收藏</text>
+        <text>2万评论</text>
+      </view>
+    </view>
+    <view class="popularCommend-list" bindtap='findMenu' data-name="水果沙拉">
+      <text class="popularCommend-list_title">5分钟搞定他，轻松吃成小妖精</text>
+      <image src="../../../images/timg 2.jpg"></image>
+      <view class="popularCommend-list_memo">
+        <text>我爱厨房</text>
+        <text>1.5万收藏</text>
+        <text>2万评论</text>
+      </view>
+    </view>
+    <view class="popularCommend-list" bindtap='findMenu' data-name="秘制凉面">
+      <text class="popularCommend-list_title">夏天就差一碗秘制凉面了</text>
+      <image src="../../../images/timg 3.jpg"></image>
+      <view class="popularCommend-list_memo">
+        <text>我爱厨房</text>
+        <text>1.5万收藏</text>
+        <text>2万评论</text>
+      </view>
+    </view>
+  </view>
+</view>

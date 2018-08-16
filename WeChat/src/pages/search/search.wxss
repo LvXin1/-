@@ -1,0 +1,69 @@
+/* src/pages/search/search.wxss */
+.header{
+  background:#dbdbdb;
+  height:100rpx;
+  padding:30rpx 20rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header input{
+  width:80%;
+  height:40rpx;
+  line-height:40rpx;
+  background:#fff;
+  border:1rpx solid #ccc;
+  border-radius:20rpx;
+  font-size:30rpx;
+  padding-left:20rpx;
+}
+.header text{
+  font-size:30rpx;
+  height:40rpx;
+  padding-right:20rpx;
+}
+.menu-list{
+  width:100%;
+  padding:25rpx 20rpx;
+  display:flex;
+  justify-content: space-between;
+  border-bottom:1px solid #dbdbdb;
+}
+.menu-list image{
+  width:200rpx;
+  height:150rpx;
+  flex-shrink:0;
+}
+.menu-list-memo{
+  margin-left:30rpx;
+  flex:1;
+  text-align:left;
+  max-width:calc(100% - 230rpx); 
+}
+.menu-list-memo text{
+  display:block;
+  width:100%;
+
+}
+.menu-Name{
+  font-size:36rpx;
+  font-weight:bold;
+}
+.menu-ingredients,.menu-tag{
+  width:100%;
+  font-size:28rpx;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* -webkit-line-clamp:2; */
+}
+.menu-tag{
+  color:#999;
+}
+.marginTp-no{
+  margin-top:0;
+} 
+.paddingTp-no{
+  padding-top:0;
+}

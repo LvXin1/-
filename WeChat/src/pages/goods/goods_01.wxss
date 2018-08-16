@@ -1,0 +1,66 @@
+.gototop{
+	position: fixed;
+	bottom: 20rpx;
+	right: 20rpx;
+	transition: all 0.3s;
+	opacity: 0;
+	transform: translateY(200rpx) rotate(180deg);
+}
+.gototop.active{
+	opacity: 0.7;
+	transform: translateY(0) rotate(180deg);
+}
+.test-item{
+	padding: 20rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+.container-body{
+  height:900rpx;
+}
+.slide-image{
+  width:100%;
+  height:300rpx;
+}
+.content{
+  padding:30rpx;
+}
+.content-intro{
+  width:100%;
+  font-size:30rpx;
+  text-align:justify;
+  text-justify:distribute-all-lines;/*ie6-8*/
+  text-align-last:justify;/* ie9*/
+  -moz-text-align-last:justify;/*ff*/
+  -webkit-text-align-last:justify;/*chrome 20+*/
+}
+.content-title{
+  font-weight:bold;
+}
+.content-title_h2{
+  font-size:30rpx;
+  font-weight:bold;
+  padding:20rpx 0;
+  display:block;
+}
+.weui-cell__bd{
+  display:flex;
+  justify-content: space-between;
+}
+.content-ingredients_goods{
+  width:70%;
+}
+.content-ingredients_num{
+  width:30%;
+}
+
+.content-steps_list{
+  width:100%;
+}
+.content-steps_list image{
+  width:100%;
+}
+.content-steps_list text{
+  display:block;
+  padding:20rpx 0;
+  font-size:28rpx;
+}

@@ -1,0 +1,60 @@
+.header{
+  width:100%;
+  height:400rpx;
+  position:relative;
+}
+.header image{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:400rpx;
+}
+.header .account_phone{
+  position:absolute;
+  top:70rpx;
+  left:calc(50% - 100rpx);
+  z-index:100;
+  width:200rpx;
+  height:200rpx;
+  border-radius:100rpx;
+  border:1rpx solid #f6f6f6;
+  margin: 0 auto;
+  background:#fff;
+}
+.header .account_phone  button{
+  position:absolute;
+  height:60rpx;
+  line-height:60rpx;
+  padding:0 60rpx;
+  bottom:-80rpx;
+  font-size:26rpx;
+}
+.view_tp{
+  border-bottom:10rpx solid #f6f6f6;
+}
+.view_tp ul{
+  display:block; 
+  width:100%;
+}
+ .view_tp ul li{
+  display:block;
+  padding:0 20rpx;
+  border-bottom:1rpx solid #f6f6f6;
+  overflow:hidden;
+} 
+.view_tp ul li a{
+  width:90%;
+  float:left;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:26rpx;
+}
+ .arrow-right:after{
+  content:"\e527";
+  font-family:"iconfont";
+  font-size:22rpx;
+  float:left;
+  height:80rpx;
+  line-height:80rpx;
+} 

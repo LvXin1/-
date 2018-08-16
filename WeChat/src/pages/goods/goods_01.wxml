@@ -1,0 +1,29 @@
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="content">
+  <text class="content-title">{{title}}</text>
+  <text class="content-intro">
+    {{intro}}
+  </text>
+  <text class="content-title_h2">用料</text>
+  <view class="weui-cells searchbar-result content-ingredients">
+    <view class="weui-cell" wx:for="{{ingredients}}" wx:key="{{index}}">
+      <view class="weui-cell__bd">
+        <view class="content-ingredients_goods">{{item[0]}}</view>
+        <view class="content-ingredients_num">{{item[1]}}</view>
+      </view>
+    </view>
+  </view>
+  <text class="content-title_h2">做法</text>
+  <view class="content-steps">
+    <view class="content-steps_list" wx:for="{{steps}}" wx:key="{{index}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.step}}</text>
+    </view>
+    </view>
+</view>

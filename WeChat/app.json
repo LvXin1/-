@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "src/pages/index/index",
+    "src/pages/menuClass/menuClass",
+    "src/pages/search/search",
+    "src/pages/my/my",
+    "src/pages/goods/goods_01"
+    
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  }
+}

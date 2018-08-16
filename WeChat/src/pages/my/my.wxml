@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<view class="header">
+  <image src="../../images/my/my.jpg" />
+  <view class="account_phone">
+     <button type="default" size="{{defaultSize}}" 
+     bindtap="gologin" hover-class="other-button-hover">立即登录 </button>
+  </view>
+</view>
+<view class="main">
+  <view class="view_tp">
+    <ul>
+      <li><a>全部订单</a><span class="arrow-right"></span></li>
+      <li><a>待付款</a><span class="arrow-right"></span></li>
+      <li><a>待发货</a><span class="arrow-right"></span></li>
+      <li><a>待收货</a><span class="arrow-right"></span></li>
+    </ul>
+  </view>
+  <view class="view_btm"></view>
+</view>
